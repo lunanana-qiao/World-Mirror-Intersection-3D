@@ -27,3 +27,6 @@ tools/
 *.docx
 *.pdf
 *.pptx
+
+# 运行时日志
+*.log
