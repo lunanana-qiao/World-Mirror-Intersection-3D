@@ -1,0 +1,19 @@
+# 复制此文件为 config.toml，填入 AutoDL 控制台里的 SSH 连接信息
+
+[autodl]
+host = "connect.bjb1.seetacloud.com"   # AutoDL 实例的 SSH 地址
+port = 17529                             # SSH 端口（AutoDL 控制台可见）
+username = "root"
+password = "<YOUR_PASSWORD>"   # 替换为 AutoDL 控制台里的 SSH 密码
+
+[paths]
+# HunyuanWorld-Mirror 在 AutoDL 上的路径
+mirror_dir = "/root/autodl-tmp/HunyuanWorld-Mirror"
+# 远程输入/输出目录（会自动创建）
+remote_input = "/root/autodl-tmp/intersection_agent/input"
+remote_output = "/root/autodl-tmp/intersection_agent/results"
+# conda 环境名（与你 AutoDL 上的一致）
+conda_env = "hunyuanworld-mirror"
+# 使用本地已下载模型的推理脚本（不要用 infer.py）
+infer_script = "/root/autodl-tmp/HunyuanWorld-Mirror/infer_plus.py"
+model_dir = "./ckpts"

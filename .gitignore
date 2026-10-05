@@ -1,0 +1,29 @@
+# 敏感配置（含 AutoDL 凭据，严禁提交）
+config.toml
+
+# Python 运行产物
+venv/
+__pycache__/
+*.pyc
+
+# 运行时上传目录
+uploads/
+
+# 重建结果（体积大，属生成产物）
+output/
+*.ply
+*.npy
+*.mp4
+*.glb
+
+# 原始航拍照片（体积大且可能含 GPS EXIF 元数据）
+photos/
+
+# 二进制工具
+tools/
+
+# 大型二进制文档（项目报告/论文/PPT，体积约 100MB，暂不纳入代码仓库；如确需请用 git add -f 单独加入）
+*.doc
+*.docx
+*.pdf
+*.pptx
